@@ -1,4 +1,9 @@
 img {
-    width: 32rem;
-    height: 32rem;
+    width: 320px;
+    height: 320px;
+}
+
+
+.hide-off{
+    display: none;
 }
