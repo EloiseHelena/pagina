@@ -1,5 +1,33 @@
+:root {
+    font-size: 62.5%;
+
+    --first-color: #77c5e3;
+    
+    --second-color: #d6eef7;
+
+    --third-color: #ed544c;
+
+    --fourth-color: #eaa319;
+
+    --fifth-color: #16b5a3;
+
+    --sixth-color: #3f97c9;
+
+    --seventh-color: #16b5a3;
+
+    --text-color-primary: #FFFFFF;
+
+    --text-color-primary: #000;
+
+}
+
+
+body{
+    font-family: 'Open Sans', sans-serif;;
+}
+
 main{
-    background-color: #77c5e3;
+    background-color: var(--first-color);
     display: flex;
     justify-content: center;
 }
@@ -9,7 +37,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d6eef7;
+    background-color: var(--second-color);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .inicio{
@@ -20,9 +49,15 @@ header{
 }
 
 header h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     font-size: 2.5rem;
-    color: #000;
+    color: var(--text-color-primary);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+header a {
+    
 }
 
 .tm-white{
@@ -38,17 +73,17 @@ header h1{
     font-size: 1.2em;
 }
 
-.gallery-container{
-    display: flex;
-    flex-wrap:wrap;
-    width: 1500px;
-    gap: 25px;
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 colunas de tamanho igual */
+    gap: 20px;
+    max-width: 1390px;
+    margin: 0 auto;
 }
 
-.gallery-items{
-    width: 320px;
-    height: 320px;
-    border: none;
+.gallery-items {
+    width: 100%;
+    height: auto;
 }
 
 button{
@@ -65,24 +100,31 @@ button{
 }
 
 .box1:hover{
-    background-color: #38b6e6;
+    background-color: var(--sixth-color);
     transition: 0.5s;
+    color: #FFFFFF;
 }
 .box2:hover{
-    background-color: #ed544c;
+    background-color: var(--third-color);
     transition: 0.5s;
+    color: #FFFFFF;
 }
 .box3:hover{
-    background-color: #eaa319;
+    background-color: var(--fourth-color);
     transition: 0.5s;
+    color: #FFFFFF;
 }
 .box4:hover{
-    background-color: #16b5a3;
+    background-color: var(--seventh-color);
     transition: 0.5s;
+    color: #FFFFFF;
+
 }
 .box5:hover{
     background-color: #447fca;
     transition: 0.5s;
+    color: #FFFFFF;
+
 }
 
 
@@ -97,6 +139,8 @@ button{
 
 .containImg {
     position: relative;
+    max-width: 320px;
+    height: auto;
 }
 
 .text-container {
@@ -105,9 +149,6 @@ button{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; 
-    color: red;
+    color: #FFFFFF;
 }
 
-.row{
-
-}
