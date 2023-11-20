@@ -17,13 +17,13 @@
 
     --text-color-primary: #FFFFFF;
 
-    --text-color-primary: #000;
+    --text-color-second: #000;
 
 }
 
 
 body{
-    font-family: 'Open Sans', sans-serif;;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
 main{
@@ -33,7 +33,7 @@ main{
 }
 
 header{
-    height: 100px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,40 +45,46 @@ header{
    text-decoration: none;
    display: flex;
    align-items: center;
-    gap: 15px;
+   margin-left: 4rem;
+   gap: 1.5rem;
 }
 
 header h1{
     font-family: sans-serif;
-    font-size: 2.5rem;
-    color: var(--text-color-primary);
+    font-size: 3rem;
+    color: var(--text-color-second);
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
 
-header a {
-    
-}
 
 .tm-white{
+    font-weight: 400;
     display: block;
-    font-size: 2em;
-    padding: 20px;
-    font-size: 1.8rem; 
+    font-size: 2.5rem;
+    padding: 3rem;
+    color: var(--text-color-primary);
+    margin: 0 2rem;
 }
 
 .tm-text{
+    font-family: 'Open Sans', sans-serif;
     display: block;
     padding: 0 auto;
-    font-size: 1.2em;
+    color: var(--text-color-primary);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    width: 67.8rem;
+    margin: 0 4rem;
+    font-weight: 100;
 }
 
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 3 colunas de tamanho igual */
-    gap: 20px;
-    max-width: 1390px;
-    margin: 0 auto;
+    gap: 1.5rem;
+    max-width: 139rem;
+    margin: 2rem 4rem;
 }
 
 .gallery-items {
@@ -87,12 +93,13 @@ header a {
 }
 
 button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     display: table-cell;
-    font-weight: 600;
-    font-size: 1.2em;
+    font-size: 1.6rem;
     vertical-align: middle;
-    width: 150px;
-    height: 100px;
+    width: 130px;
+    height: 80px;
     text-decoration: none;
     background-color: transparent;
     outline: none;
@@ -103,28 +110,31 @@ button{
     background-color: var(--sixth-color);
     transition: 0.5s;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .box2:hover{
     background-color: var(--third-color);
     transition: 0.5s;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .box3:hover{
     background-color: var(--fourth-color);
     transition: 0.5s;
     color: #FFFFFF;
+    cursor: pointer;
 }
 .box4:hover{
     background-color: var(--seventh-color);
     transition: 0.5s;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
 .box5:hover{
     background-color: #447fca;
     transition: 0.5s;
     color: #FFFFFF;
-
+    cursor: pointer;
 }
 
 
@@ -137,18 +147,103 @@ button{
     align-items: end;
 }
 
+.select{
+    background: #38b6e6;
+    color: #FFFFFF;
+}
+
+.row {
+    display: flex;
+}
 .containImg {
     position: relative;
     max-width: 320px;
     height: auto;
-}
-
-.text-container {
+    cursor: pointer;
+  }
+  
+  .text-container {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center; 
+    text-align: center;
     color: #FFFFFF;
+    z-index: 2; 
+  }
+  
+  .text-container h1 {
+    margin-top: 0;
+    font-size: 2rem;
+    font-weight: 100;
+    transition: margin-top 0.5s ease;
+  }
+  
+  .text-container.hov-in h1 {
+    margin-top: 4rem;
+  }
+  
+
+  .containImg::before,
+.containImg::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: width 0.4s ease-out, height 0.4s ease-out, border-color 0.4s ease-out;
 }
 
+.containImg::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+}
+
+.containImg::after {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: 0;
+  height: 0;
+}
+
+.containImg::before,
+.containImg::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  transition: width 0.4s ease-out, height 0.4s ease-out, border-color 0.4s ease-out;
+}
+
+.containImg:hover::before,
+.containImg:hover::after {
+  width: calc(100% - 50px);
+  height: calc(100% - 50px);
+  border-color: #FFFFFF;
+}
+  
+
+  .text-container p {
+    width: 300px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; 
+    transform: translateY(20px); 
+    font-size: 1.3rem;
+  }
+  
+  .text-container.hov-in p {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+  
