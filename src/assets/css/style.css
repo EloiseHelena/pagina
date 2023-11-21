@@ -71,7 +71,9 @@ header h1{
     font-size: 2.5rem;
     margin: 20px 0;
     color: var(--text-color-primary);
-    width: 100%;
+    margin: 2rem auto;
+    max-width: 110rem;
+
 }
 
 .tm-text{
@@ -81,8 +83,8 @@ header h1{
     color: var(--text-color-primary);
     font-size: 1.6rem;
     line-height: 1.8;
-    width: 100%;
-
+    margin: 2rem auto;
+    max-width: 110rem;
 
     font-weight: 100;
 }
@@ -159,7 +161,7 @@ header h1{
     display: flex;
 }
 
-.row-2{
+.menu{
   display: none;
 }
 .containImg {
@@ -276,9 +278,9 @@ header h1{
 
 
   .section-4{
-    width: 128rem;
-    height: 65rem;
-    margin-top: 2rem;
+    width: 100%;
+    max-width: 128rem;
+    height: 84rem;
   }
 
   
@@ -299,44 +301,51 @@ header h1{
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    padding: 5rem;
   }
 
     .contain-divs{
-      gap: 3rem;
+      gap: 1rem;
       display: flex;
     }
   
     .content{
       display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 1rem;
       background: rgba(255,255,255,0.7);
-      width: 120rem;
-      height: 10rem;
+      width: 100%;
+      max-width: 120rem;
+      height: 18rem;
       padding: 3rem 4rem;
     }
 
 
   .section-5{
-    width: 1100px;
+    width: 100%;
+    max-width: 1100px;
     margin-top: 2rem;
     gap: 2rem;
+    
   }
 
   .containerMaps{
     display: flex;
     gap: 3rem;
     justify-content: center;
+    
   }
 
   .containerMaps form{
-    width: 40rem;
+    width: 50%;
+    max-width: 40rem;
+    min-width: 36rem;
     display: flex;
     flex-direction: column;
     background-color: rgba(255,255,255,0.7);
-    padding: 20px 20px 80px 20px;
+    padding: 20px 40px 80px 40px;
     gap: 2rem;
-
+    margin: 0;
   }
 
   .containerMaps form h1{
@@ -354,12 +363,14 @@ header h1{
 
   
   .containerMaps form input{
+    width: 100%;
     padding: 1rem .5rem;
     border: none;
     border: 1px solid rgb(194, 192, 192);
   }
 
   .containerMaps form textarea{
+    width: 100%;
     padding: 1rem .5rem;
     border: none;
     border: 1px solid rgb(194, 192, 192);
@@ -367,6 +378,8 @@ header h1{
   }
 
   .maps{
+    width: 50%;
+    max-width: 50rem;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -422,15 +435,34 @@ header h1{
 
 
   @media(max-width: 950px){
-    .row{
-      display: none;
-    }
 
-
-    .row-2{
+    header { 
       display: flex;
-      margin-right: 4rem;
+
     }
+
+    .row{
+      flex-direction: column;
+      display: none;
+      background-color: rgba(255,255,255,0.7);
+    }
+
+    .containButtons{
+      height: 150px;
+      gap: 0;
+      display: flex;
+      flex-direction: column;
+      margin-top: 10rem;
+    }
+
+    .menu{
+      cursor: pointer;
+      width: 50px;
+      margin-right: 8rem;
+      display: flex;
+      position: static;
+    }
+
 
     .gallery-container {
       display: grid;
@@ -439,57 +471,154 @@ header h1{
       align-items: center;
       justify-content: center;
       max-width: 60rem;
-      margin: 2rem 10rem;
+      margin: 2rem auto;
+      padding: 2rem;
   }
 
+    .title{
+      padding: 0 2rem;
+      margin: 0 auto;
+    }
   .tm-white{
-    font-weight: 400;
-    display: block;
-    font-size: 2.5rem;
-    margin: 20px 0;
-    color: var(--text-color-primary);
-    width: 80%;
-    margin: 2rem 10rem;
+    margin: 2rem 0;
+    padding: 0 auto;
 
 }
 
 .tm-text{
-    font-family: 'Open Sans', sans-serif;
-    display: block;
     padding: 0 auto;
-    color: var(--text-color-primary);
-    font-size: 1.6rem;
-    line-height: 1.8;
-    width: 70%;
-    margin: 2rem 10rem;
 
-    font-weight: 100;
+    line-height: 1.8;
+    max-width: 60rem;
 }
 
-  header {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(255,255,255,0.7);
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    max-width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
+  .section-4{
+    width: 128rem;
+    height: 110rem;
+    margin-top: 2rem;
   }
+
+  
+  .section-4 h1{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+  }
+
+  .section-4 p{ 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: start;
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+
+    .contain-divs{
+      gap: 2rem;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .content{
+      display: bloc;
+      flex-direction: column;
+      gap: 3rem;
+      background: rgba(255,255,255,0.7);
+      width: 90%;
+      height: 20em;
+      padding: 3rem 2rem;
+    }
+
+      .containerMaps{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+
   
   }
 
   @media(max-width: 500px){
     .gallery-container {
-      display: grid;
       grid-template-columns: repeat(1, 1fr);
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      max-width: 60rem;
       margin: 2rem 10rem;
   }
+
+  .gallery-items {
+    width: 100%;
+    height: auto;
+}
+
+  .tm-white{
+
+    width: 100%;
+}
+
+.tm-text{
+    width: 100%;
+}
+
+  .title{
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+
+
+
+  
+
+}
+
+  .slide-in-blurred-top {
+    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+            animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+  }
+
+  @-webkit-keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-top {
+    0% {
+      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+              transform: translateY(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
   }
