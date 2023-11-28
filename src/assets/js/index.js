@@ -47,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
       buttons.forEach(function(btn) {
         btn.classList.remove('select');
         btn.style.backgroundColor = 'transparent';
-        btn.style.color = '#000';
       });
 
       this.classList.add('select');

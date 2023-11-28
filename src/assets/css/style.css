@@ -34,7 +34,7 @@ main{
 }
 
 header {
-  height: 80px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +46,6 @@ header {
   top: 0;
   z-index: 1000;
 }
-
 
 .inicio{
    text-decoration: none;
@@ -64,14 +63,12 @@ header h1{
     font-weight: 100;
 }
 
-
 .tm-white{
     font-weight: 400;
     display: block;
     font-size: 2.5rem;
-    margin: 20px 0;
+    margin: 50px 0 20px 0;
     color: var(--text-color-primary);
-    margin: 2rem auto;
     max-width: 110rem;
 
 }
@@ -83,8 +80,8 @@ header h1{
     color: var(--text-color-primary);
     font-size: 1.6rem;
     line-height: 1.8;
-    margin: 2rem auto;
-    max-width: 110rem;
+    /* margin: 2rem auto; */
+    max-width: 700px;
 
     font-weight: 100;
 }
@@ -93,8 +90,8 @@ header h1{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    max-width: 110rem;
-    margin: 2rem auto;
+    max-width: 130rem;
+    margin: 2rem 2rem;
 }
 
 .gallery-items {
@@ -109,7 +106,7 @@ header h1{
     font-size: 1.6rem;
     vertical-align: middle;
     width: 130px;
-    height: 80px;
+    height: 100px;
     text-decoration: none;
     background-color: transparent;
     outline: none;
@@ -258,6 +255,11 @@ header h1{
     width: 100%;
 
   }
+
+  .text-container h1{
+    width: 250px;
+    font-size: 25px;
+  }
   
   .text-container.hov-in p {
     opacity: 1; 
@@ -333,19 +335,20 @@ header h1{
     display: flex;
     gap: 3rem;
     justify-content: center;
-    
+    margin: 80px 0 60px 0;
   }
 
   .containerMaps form{
     width: 50%;
-    max-width: 40rem;
-    min-width: 36rem;
+    max-width: 50rem;
+    min-width: 26rem;
     display: flex;
     flex-direction: column;
     background-color: rgba(255,255,255,0.7);
     padding: 20px 40px 80px 40px;
     gap: 2rem;
     margin: 0;
+    min-height: 520px;
   }
 
   .containerMaps form h1{
@@ -353,25 +356,32 @@ header h1{
   }
 
   
-  .containerMaps form h1, .containerMaps form h1 p{
-    font-size: 2rem;
+  .containerMaps form h1{
+    font-size: 25px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-    color: #2c343b;
+    color: #4f5155;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+  }
+  .containerMaps form p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color:#83878d;
   }
 
   
   .containerMaps form input{
-    width: 100%;
-    padding: 1rem .5rem;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 20px;
     border: none;
     border: 1px solid rgb(194, 192, 192);
   }
 
   .containerMaps form textarea{
-    width: 100%;
-    padding: 1rem .5rem;
+    width: 90%;
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 20px;
     border: none;
     border: 1px solid rgb(194, 192, 192);
     resize: none;
@@ -380,12 +390,13 @@ header h1{
   .maps{
     width: 50%;
     max-width: 50rem;
+    min-width: 26rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 408px;
-    padding: 20px 20px 80px 20px;
     background-color: rgba(255,255,255,0.7);
+    padding: 20px 40px 80px 40px;
+    gap: 2rem;
+    margin: 0;
   }
 
   .maps h1{
@@ -397,6 +408,7 @@ header h1{
     .contain-button{
       display: flex;
       align-self: end;
+      
     }
 
   .section-5 .contain-button #sbmt{
@@ -470,7 +482,7 @@ header h1{
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      max-width: 60rem;
+      max-width: 658px;
       margin: 2rem auto;
       padding: 2rem;
   }
@@ -480,16 +492,14 @@ header h1{
       margin: 0 auto;
     }
   .tm-white{
-    margin: 2rem 0;
-    padding: 0 auto;
-
+    margin: 50px auto 20px 0;
+    padding: 0 2rem;
 }
 
 .tm-text{
-    padding: 0 auto;
-
-    line-height: 1.8;
-    max-width: 60rem;
+  padding: 0 2rem;
+  line-height: 1.8;
+  max-width: 658px;
 }
 
   .section-4{
@@ -549,31 +559,27 @@ header h1{
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      margin: 2rem 10rem;
+      margin: 2rem auto;
+     width: 300px;
   }
 
-  .gallery-items {
-    width: 100%;
-    height: auto;
-}
-
   .tm-white{
-
-    width: 100%;
+    margin: 50px auto;
+    padding: 0 2rem;
 }
 
 .tm-text{
-    width: 100%;
+  padding: 0 2rem;
+  line-height: 1.8;
+  margin: 50px 0 0 0;
 }
 
+
   .title{
-    padding: 0 40px;
-    margin: 0 auto;
+    width: 400px;
+    margin: 0;
+    padding: 0;
   }
-
-
-
-  
 
 }
 
@@ -619,6 +625,24 @@ header h1{
               transform-origin: 50% 50%;
       -webkit-filter: blur(0);
               filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    -webkit-animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-left 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes slide-in-left {
+    0% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
       opacity: 1;
     }
   }
