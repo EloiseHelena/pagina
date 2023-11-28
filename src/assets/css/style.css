@@ -67,10 +67,9 @@ header h1{
     font-weight: 400;
     display: block;
     font-size: 2.5rem;
-    margin: 50px 0 20px 0;
+    margin: 50px 1rem 20px 1rem;
     color: var(--text-color-primary);
     max-width: 110rem;
-
 }
 
 .tm-text{
@@ -80,10 +79,9 @@ header h1{
     color: var(--text-color-primary);
     font-size: 1.6rem;
     line-height: 1.8;
-    /* margin: 2rem auto; */
     max-width: 700px;
-
     font-weight: 100;
+    margin: 2rem 1rem;
 }
 
 .gallery-container {
@@ -91,7 +89,7 @@ header h1{
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     max-width: 130rem;
-    margin: 2rem 2rem;
+    margin: 2rem 1rem;
 }
 
 .gallery-items {
@@ -446,7 +444,7 @@ header h1{
   }
 
 
-  @media(max-width: 950px){
+  @media(max-width: 960px){
 
     header { 
       display: flex;
@@ -493,7 +491,7 @@ header h1{
     }
   .tm-white{
     margin: 50px auto 20px 0;
-    padding: 0 2rem;
+    padding: 0 3rem;
 }
 
 .tm-text{
@@ -560,23 +558,22 @@ header h1{
       align-items: center;
       justify-content: center;
       margin: 2rem auto;
-     width: 300px;
+     width: 380px;
   }
 
   .tm-white{
-    margin: 50px auto;
+    margin: 50px auto 20px;
     padding: 0 2rem;
 }
 
 .tm-text{
   padding: 0 2rem;
   line-height: 1.8;
-  margin: 50px 0 0 0;
 }
 
 
   .title{
-    width: 400px;
+    width: 380px;
     margin: 0;
     padding: 0;
   }
