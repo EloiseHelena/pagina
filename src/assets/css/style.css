@@ -34,7 +34,7 @@ main{
 }
 
 header {
-  height: 100px;
+  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -101,10 +101,10 @@ header h1{
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     display: table-cell;
-    font-size: 1.6rem;
+    font-size: 20px;
     vertical-align: middle;
-    width: 130px;
-    height: 100px;
+    width: 160px;
+    height: 110px;
     text-decoration: none;
     background-color: transparent;
     outline: none;
@@ -148,7 +148,7 @@ header h1{
     display: none;
 }
 
-.selected {
+.select {
   color: #FFFFFF;
 }
 
@@ -312,14 +312,17 @@ header h1{
     .content{
       display: flex;
       flex-direction: column;
-      gap: 1rem;
+      justify-content: space-between;
       background: rgba(255,255,255,0.7);
       width: 100%;
       max-width: 120rem;
-      height: 18rem;
+      height: 17rem;
       padding: 3rem 4rem;
     }
 
+    .content p{
+      color: #626b6b;
+    }
 
   .section-5{
     width: 100%;
@@ -443,7 +446,22 @@ header h1{
     border-radius: 5px;
   }
 
-
+  #nameError {
+    display: none;
+    font-size: 0.8em;
+    color: red;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  #nameError.visible {
+    display: block;
+  }
+  
+  .invalid {
+    border: 1px solid red;
+  }
+  
   @media(max-width: 960px){
 
     header { 
@@ -503,7 +521,7 @@ header h1{
   .section-4{
     width: 128rem;
     height: 110rem;
-    margin-top: 2rem;
+    margin-top: 40px;
   }
 
   
@@ -532,9 +550,9 @@ header h1{
     }
   
     .content{
-      display: bloc;
+      display: flex;
       flex-direction: column;
-      gap: 3rem;
+      gap: 50px;
       background: rgba(255,255,255,0.7);
       width: 90%;
       height: 20em;

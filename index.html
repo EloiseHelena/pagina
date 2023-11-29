@@ -343,17 +343,19 @@
 
     <section class="section-5 hide-off">
       <div class="containerMaps">
-      <form action="submit">
+      <form id="form">
         <h1>Say hello to us!</h1>
         <p>Pellentesque euismod, sem nec euismod interdum, odio elit venenatis est, gravida aliquet velit velit a ex. In luctus orci et orci lobortis, quis sagittis nibh laoreet.</p>
 
-        <input type="text" name="name" placeholder="Name"/>
-        <input type="email" name="Email" placeholder="Email"/>
-        <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-
+        <input type="text" name="name" placeholder="Name" minlength="3" class="inputName"/>
+        <input type="email" name="email" placeholder="Email" minlength="3" class="inputEmail"/>
+        <textarea name="message" name="name" cols="30" rows="10" placeholder="Your message"></textarea>
         <div class="contain-button">
           <button type="submit" id="sbmt">Send</button>
         </div>
+        <span role="alert" id="nameError" aria-hidden="true">
+          Please enter First Name or e-mail
+        </span>
         </form>
 
       <div class="maps">

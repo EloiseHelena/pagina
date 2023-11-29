@@ -83,3 +83,35 @@ menu.addEventListener('click', () => {
     row.style.display = 'flex';
   }
 });
+
+const formInputs = document.getElementById("form");
+
+
+
+formInputs.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const nameInput = e.target.name.value;
+  const emailInput = e.target.email.value;
+  const nameError = document.getElementById("nameError");
+  const firstNameField = document.getElementsByClassName("inputName")
+  const emailFild = document.getElementsByClassName("inputEmail")
+
+  if(!nameInput){
+    nameError.classList.add("visible");
+    firstNameField.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  }else if(!emailInput) {
+    nameError.classList.add("visible");
+    emailFild.classList.add("invalid");
+    nameError.setAttribute("aria-hidden", false);
+    nameError.setAttribute("aria-invalid", true);
+  } 
+  else{
+    nameError.classList.remove("visible");
+    nameError.setAttribute("aria-hidden", true);
+    nameError.setAttribute("aria-invalid", false);
+    return alert("submit form succefuly")
+  }
+
+})
