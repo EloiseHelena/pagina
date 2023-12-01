@@ -61,6 +61,7 @@ header h1{
     color: var(--text-color-second);
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
+    width: 203px;
 }
 
 .tm-white{
@@ -307,6 +308,7 @@ header h1{
     .contain-divs{
       gap: 1rem;
       display: flex;
+      align-items: center;
     }
   
     .content{
@@ -462,7 +464,7 @@ header h1{
     border: 1px solid red;
   }
   
-  @media(max-width: 960px){
+  @media(max-width: 1090px){
 
     header { 
       display: flex;
@@ -476,11 +478,12 @@ header h1{
     }
 
     .containButtons{
+      width: 160px;
       height: 150px;
       gap: 0;
       display: flex;
       flex-direction: column;
-      margin-top: 10rem;
+      margin: 10rem 4rem 0 0;
     }
 
     .menu{
@@ -520,7 +523,7 @@ header h1{
 
   .section-4{
     width: 128rem;
-    height: 110rem;
+    height: 150rem;
     margin-top: 40px;
   }
 
@@ -556,7 +559,7 @@ header h1{
       background: rgba(255,255,255,0.7);
       width: 90%;
       height: 20em;
-      padding: 3rem 2rem;
+      justify-content: space-evenly;
     }
 
       .containerMaps{
@@ -569,31 +572,71 @@ header h1{
   
   }
 
-  @media(max-width: 500px){
+  @media(max-width: 550px){
+    .menu{
+      margin-left: 100px;
+    }
+
+    .section-1{
+      width: 100%;
+    }
+    .section-2{
+      width: 100%;
+    }
+    .section-3{
+      width: 100%;
+    }
+    .content{
+      padding: 10px;
+      gap: 10px;
+    } 
+
+    .container{
+      padding: 0 0;
+    }
+   
     .gallery-container {
       grid-template-columns: repeat(1, 1fr);
       gap: 1.5rem;
       align-items: center;
       justify-content: center;
-      margin: 2rem auto;
-     width: 380px;
+      width: 100%;
+      padding: 0;
   }
 
+  .containImg {
+    position: relative;
+    height: auto;
+    cursor: pointer;
+  }
+
+
+  .inicio{
+    width: 110px;
+    margin: 0;
+  }
+
+  .containImg{
+    margin:  0 auto;
+  }
   .tm-white{
-    margin: 50px auto 20px;
-    padding: 0 2rem;
-}
+    margin: 50px 0;
+    padding: 0 0;
+    width: 100%;
+  }
 
 .tm-text{
-  padding: 0 2rem;
   line-height: 1.8;
+  margin: 0;
+  padding: 0 0;
+  width: 100%;
 }
 
 
   .title{
-    width: 380px;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    margin: 0 0;
+    padding: 0 0;
   }
 
 }
